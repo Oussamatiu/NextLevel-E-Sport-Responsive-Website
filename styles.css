@@ -1,0 +1,54 @@
+*{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+body{
+    background-color: #111111;
+    color: aliceblue;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+}
+.hero-image>img{
+    width: 100%;
+}
+.championship-description{
+    display: grid;
+    grid-template-rows:auto ;
+    row-gap: 10px;
+}
+.championship-name{
+    height: fit-content;
+    font-size:16px;
+    justify-items: center;
+}
+.info-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    height: fit-content;
+    justify-items: center;
+}
+.short-desc{
+    text-indent: 20px;
+    text-align: justify;
+}
+.watch-button{
+    background-color: #FF4653;
+    width: 100%;
+    height: 2em;
+    font-size: 24px;
+}
+.container{
+    display: flex;
+}
+.schedule{
+    
+}
