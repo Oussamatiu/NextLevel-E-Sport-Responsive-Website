@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #111111;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+h3 {
+    margin: 0;
+}
+
+.logo {
+    width: 140px;
+    height: 25px;
+    background-image: url(./projectsimages/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: grid;
+    grid-row: auto;
+}
+
+.sora img {
+    width: 40vw;
+    height: auto;
+}
+
+.sora {
+    position: relative;
+    /* height: 40vh; */
+}
+
+
+.sora div {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+}
+
+.bottom p,
+.demo div {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height:25px;
+}
+
+.sora div span,
+.demo h3,
+.bottom h3 {
+    color: #FF4653;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        padding: 5vh 6vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .bottom {
+        grid-column: span 2 / span 2;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sora img {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .main {
+        padding: 5vh 6vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 8px;
+    }
+}
+
+
+
+/* cards of more actus */
+
+.card{
+    background-color:#292929;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+}
