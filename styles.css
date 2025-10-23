@@ -113,6 +113,18 @@ th, td {
     gap: 5px;
 
 }
+
+/* EQUIPE */
+
+#background-video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .hero-image{
