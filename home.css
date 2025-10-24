@@ -13,6 +13,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
     
 }
 .navbar img {
@@ -23,12 +24,29 @@ html{
     display: none;
     gap: 1em;
 }
+.navbar ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .navbar ul li {
-   list-style-type: none;
+    list-style-type: none;
     color:#FFFFFF;
 }
 .navbar .login {
     display: none;
+}
+.btn-sign{
+    font-weight: bold;
+    padding: 6px;
+    background-color: #C3C3C3;
+    color: #111111;
+    border: none;
+}
+.btn-login{
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
 }
 i {   
     padding: 0px;
@@ -140,10 +158,22 @@ i {
     position: relative;
     width: 90%;
     height: 50vh;
-    background-color: #d9d9d9;
+    color: #FFFFFF;
 }
-.cart-team-1{
-    
+.items-1 {
+    background-image: url(images/detailed-esports-gaming-logo_1029473-588675.webp);
+    background-position: center;
+    background-size: cover;
+}
+.items-2 {
+    background-image: url(images/red-and-white-shooter-esports-team-logo-design-template-1e1a7375a107740fcdd311d65bed80c2_screen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.items-3 {
+    background-image: url(images/gaming-esports-streamer-video-game-logo-design-template-8f5817bdb7eda4d33cfc1456b9e150a6.webp);
+    background-position: center;
+    background-size: cover;
 }
 .cart-team h3 {
     margin: 10px;
@@ -176,6 +206,10 @@ i {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 1rem;
+}
+.new img {
+    width: 100%;
+    height: auto;
 }
 .elements-group{
     display: flex;
@@ -255,7 +289,6 @@ i {
     background-color: #FF4653;
 }
 .join {
-
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -266,7 +299,9 @@ i {
     padding: 10px;
     width: 90%;
     height: 30vh;
-    background-color: #a4acb4;
+    background-image: url(images/image.png);
+    background-position: center;
+    background-size: cover;
 }
 .join .btn{
     display: flex;
@@ -298,7 +333,21 @@ i {
     gap: 1rem;
     justify-content: center;
 }
-footer p {
-    margin: 1rem 0;
+footer img{
+    width: 150px;
+    height: 35px;
 }
-
+footer p {
+    margin: 1rem auto;
+}
+@media (min-width: 786px) {
+    .navbar i {
+        display: none;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar .login{
+        display: flex;
+    }
+}
