@@ -1,0 +1,57 @@
+body{
+    background-color: #111111;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.inpts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+textarea{
+    grid-column: 1/-1;
+}
+@media (max-width:500px) {
+    .inpts{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+textarea{
+    grid-column: 1/-1;
+}
+}
+.inpts input,.inpts textarea{
+    border:0.5px solid gray;
+    background:transparent;
+    height: 40px;
+    padding-left:15px;
+    color:white;
+    font-weight: bold;
+}
+h1{
+    color:white;
+    font-family: 'anton' ,sans-serif;
+}
+button{
+    grid-column: 1/-1;
+    width: 100%;
+    border:none;
+    background-color: #FF4653;
+    height: 30px;
+    color:white;
+    cursor: pointer;
+}
+button:hover{
+    grid-column: 1/-1;
+    width: 100%;
+    border:0.5px solid gray;
+    background-color: transparent;
+    height: 30px;
+    color:white;
+}
