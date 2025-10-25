@@ -11,42 +11,110 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video autoplay muted loop id="background-video">
-        <source src="public/background.mp4" type="video/mp4">
-    </video>
-    <h1>Team Falcons</h1>
-    <p>SHORT DESCRIPTION <br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet arcu nisl. 
-Vestibulum pellentesque nunc sit amet nisi eleifend, non pellentesque quam ultricies. 
-Donec eget metus et ligula mattis laoreet. Maecenas elementum placerat vestibulum. Duis tempus lacus elit, non dignissim risus dapibus non. 
-Aliquam massa massa, lacinia vitae augue ut, hendrerit aliquet justo. Pellentesque scelerisque vestibulum mollis. 
-Fusce auctor placerat tempor. Nulla facilisi.</p>
-    <a href="#"><button>JOINDRE</button></a>
-    <h2>Nos joueurs</h2>
-    <div>
-        <div>
-            <img src="public/player test.png" alt="">
-        </div>
-        <div>
-            <img src="public/player test.png" alt="">
-        </div>
-        <div>
-            <img src="public/player test.png" alt="">
-        </div>
-        <div>
-            <img src="public/player test.png" alt="">
-        </div>
-        <div>
-            <img src="public/player test.png" alt="">
-        </div>
-        <div>
-            <img src="public/player test.png" alt="">
+    <div class="equipe-hero">
+        <video autoplay muted loop id="background-video">
+            <source src="public/background.mp4" type="video/mp4">
+        </video>
+        <div class="equipe-descr">
+            <h1>Team Falcons</h1>
+            <p>SHORT DESCRIPTION <br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet arcu nisl. 
+        Vestibulum pellentesque nunc sit amet nisi eleifend, non pellentesque quam ultricies. 
+        Donec eget metus et ligula mattis laoreet. Maecenas elementum placerat vestibulum.
+            </p>
+            <div class="center">
+                <a href="#"><button class="match-button small">JOINDRE</button></a>
+            </div>
         </div>
     </div>
     <h2>Nos joueurs</h2>
-    <div>
-        <p>tournaments</p>
-        <p>808</p>
+    <div class="players">
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+        <div class="player-card">
+            <div class="background-shape"></div>
+            <img src="public/player test.png" alt="">
+        </div>
+    </div>
+    <h2>Statistiques</h2>
+    <div class="stats">
+        <div class="stats-card">
+            <p class="stat-type">tournaments</p>
+            <div class="stat-num">808</div>
+            <div class="year-stat">
+                <div>2025</div>
+                <div class="stat-bar"></div>
+                <div>349</div>
+            </div>
+            <div class="year-stat">
+                <div>2024</div>
+                <div class="stat-bar"></div>
+                <div>284</div>
+            </div>
+            <div class="year-stat">
+                <div>2023</div>
+                <div class="stat-bar"></div>
+                <div>125</div>
+            </div>
+            <div class="year-stat">
+                <div>2022</div>
+                <div class="stat-bar"></div>
+                <div>48</div>
+            </div>
+            <div class="year-stat">
+                <div>2021</div>
+                <div class="stat-bar"></div>
+                <div>2</div>
+            </div>
+        </div>
+        <div class="devider"></div>
+        <div class="stats-card">
+            <p class="stat-type">Reward</p>
+            <div class="stat-num">1,000,000</div>
+            <div class="year-stat">
+                <div>2025</div>
+                <div class="stat-bar"></div>
+                <div>500,000</div>
+            </div>
+            <div class="year-stat">
+                <div>2024</div>
+                <div class="stat-bar"></div>
+                <div>250,000</div>
+            </div>
+            <div class="year-stat">
+                <div>2023</div>
+                <div class="stat-bar"></div>
+                <div>125,000</div>
+            </div>
+            <div class="year-stat">
+                <div>2022</div>
+                <div class="stat-bar"></div>
+                <div>62,500</div>
+            </div>
+            <div class="year-stat">
+                <div>2021</div>
+                <div class="stat-bar"></div>
+                <div>31,250</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
