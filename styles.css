@@ -214,23 +214,27 @@ td {
   display: grid;
   padding: 5%;
   column-gap: 5%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
 }
 .player-card {
   box-sizing: border-box;
   position: relative;
-  padding: 5%;
+  width: 80%;
 }
 .background-shape {
   background-color: #f0f8ff;
-  bottom: 7.5%;
-  padding: 5%;
-  width: 80%;
-  height: 35%;
+  bottom: 3%;
+  width: 100%;
+  height: 40%;
   transform: skew(-10deg);
   position: absolute;
   z-index: -1;
+}
+.player-card>img{
+  width: 100%;
+  bottom: 0px;
+
 }
 .stats {
   display: flex;
