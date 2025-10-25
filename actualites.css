@@ -98,8 +98,6 @@ main {
     }
 }
 
-
-
 .cards {
     display: flex;
     gap: 10px;
@@ -145,113 +143,31 @@ main h3 {
     color: #FF4653;
 }
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.sora{
+    animation: comes-from-right 0.5s;
 }
-
-.navbar img {
-    width: 150px;
-    height: 35px;
-}
-
-.navbar ul {
-    display: none;
-    gap: 1em;
-}
-
-.navbar ul li {
-    list-style-type: none;
-    color: #FFFFFF;
-}
-
-.navbar .login {
-    display: none;
-}
-
-i {
-    padding: 0px;
-    color: white;
-}
-
-@media(min-width:600px) {
-    .footer-group{
-        padding:10px 80px;
+@keyframes comes-from-right{
+    0%{
+        transform: translateX(-20%);
+        opacity: 0;
     }
-    .footer-group ul {
-        display: flex;
-        margin-top: 1rem;
-        gap: 0.5rem;
+    100%{
+        transform: translateX(0);
+        opacity: 1;
     }
-
-    .footer-group ul li a {
-        text-decoration: none;
-        color: #FFFFFF;
+}
+.demo{
+    animation: comes-from-left 0.5s;
+}
+@keyframes comes-from-left{
+    0%{
+        transform: translateX(20%);
+        opacity: 0;
     }
-
-    .footer-group ul li {
-        list-style-type: none;
-    }
-    .footer-group{
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-    }
-    .footer-group div{
-        display: flex;
-        justify-content: space-between;
+    100%{
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
-@media(max-width:600px) {
-    .footer-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .footer-group div{
-        display:flex;
-        flex-direction:column ;
-        align-items: center;
-    }
-
-    .footer-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .footer-group ul {
-        display: flex;
-        margin-top: 1rem;
-        gap: 0.5rem;
-    }
-
-
-    .footer-group ul li {
-        list-style-type: none;
-    }
-
-    .footer-group ul li a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    .links-socials {
-        display: flex;
-        flex-direction: row !important;
-        margin: 1rem 0;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    footer p {
-        margin: 1rem 0;
-    }
-}
