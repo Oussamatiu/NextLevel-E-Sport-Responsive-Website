@@ -3,75 +3,91 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    font-family: "Anton", sans-serif;
 }
+
 .navbar img {
     width: 150px;
     height: 35px;
 }
+
 .navbar ul {
     display: none;
     gap: 1em;
 }
+
 .navbar ul a {
     text-decoration: none;
     color: #FFFFFF;
 }
-.navbar ul a:hover{
-    background: linear-gradient(to right,#FF4653,#FFFFFF,#FF4653,#C3C3C3,#f11c2a);
+
+.navbar ul a:hover {
+    background: linear-gradient(to right, #FF4653, #FFFFFF, #FF4653, #C3C3C3, #f11c2a);
     -webkit-background-clip: text;
     background-size: 200% 200%;
     background-clip: text;
     color: transparent;
     animation: gradient-animation 3s ease infinite;
 }
+
 @keyframes gradient-animation {
-    0%{
-       background-position: 0% 100%;
+    0% {
+        background-position: 0% 100%;
     }
-    100%{
-       background-position: 100% 0%;
+
+    100% {
+        background-position: 100% 0%;
     }
 }
+
 .navbar ul li {
     list-style-type: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .navbar .login {
     display: none;
 }
-.btn-sign{
+
+.btn-sign {
     font-weight: bold;
     padding: 6px;
     background-color: #C3C3C3;
     color: #111111;
     border: none;
 }
-.btn-login{
+
+.btn-login {
     padding: 6px;
     background-color: transparent;
     border: none;
     color: #FFFFFF;
 }
-i {   
+
+i {
     padding: 0px;
     color: white;
 }
+
 @media (min-width: 786px) {
     .navbar i {
         display: none;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: flex;
     }
-    .navbar .login{
+
+    .navbar .login {
         display: flex;
     }
 }
 
 @media(min-width:600px) {
-    .footer-group{
-        padding:10px 80px;
+    .footer-group {
+        padding: 10px 80px;
     }
+
     .footer-group ul {
         display: flex;
         margin-top: 1rem;
@@ -86,12 +102,14 @@ i {
     .footer-group ul li {
         list-style-type: none;
     }
-    .footer-group{
+
+    .footer-group {
         display: flex;
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
-    .footer-group div{
+
+    .footer-group div {
         display: flex;
         justify-content: space-between;
     }
@@ -105,9 +123,9 @@ i {
         justify-content: space-between;
     }
 
-    .footer-group div{
-        display:flex;
-        flex-direction:column ;
+    .footer-group div {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -146,10 +164,11 @@ i {
         margin: 1rem 0;
     }
 }
-footer{
+
+footer {
     position: relative;
     top: 25vh;
     background-color: #292929;
-    color:#ffffff;
-    font-family: "anton",sans-serif;
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
 }
