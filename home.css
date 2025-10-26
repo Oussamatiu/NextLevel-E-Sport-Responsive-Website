@@ -259,8 +259,8 @@ li a:hover {
     transition: 0.4s ease;
 }
 .cart-team button:hover {
-    background-color: #111111;
-    color: #a4acb4;
+    background-color: #FF4653;
+    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -504,6 +504,15 @@ button {
     margin: 1rem 0;
     gap: 1rem;
     justify-content: center;
+}
+.links-socials i {
+    transition: 0.4s ease;
+}
+.links-socials i:hover{
+   transform: translateY(-2px);
+   color: #FF4653;
+   cursor: pointer;
+
 }
 
 footer img {
