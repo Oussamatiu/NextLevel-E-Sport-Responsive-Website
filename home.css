@@ -41,6 +41,7 @@ html {
 
 .navbar .login {
     display: none;
+
 }
 
 .btn-sign {
@@ -49,13 +50,26 @@ html {
     background-color: #C3C3C3;
     color: #111111;
     border: none;
+    transition: 0.4s ease;
 }
+.btn-sign:hover {
+    background-color: transparent;
+    color: #C3C3C3;
+    cursor: pointer;
+}
+
 
 .btn-login {
     padding: 6px;
     background-color: transparent;
     border: none;
     color: #FFFFFF;
+    transition: 0.4s ease;
+}
+.btn-login:hover{
+    background-color: #C3C3C3;
+    color: #111111;
+    cursor: pointer;
 }
 
 i {
@@ -92,18 +106,36 @@ p {
 
 .btn button {
     border: none;
-    padding: 12px 15px;
-
 }
-
+a {
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+li a:hover {
+   color: #FF4653;
+}
 .btn-red {
     background-color: #FF4653;
     color: #FFFFFF;
+    padding: 12px 15px;
+    transition: 0.4s ease;
+}
+.btn-red:hover {
+    background-color: #d9d9d9;
+    color: black;
+    cursor: pointer;
 }
 
 .btn-gray {
     background-color: #d9d9d9 !important;
     color: black !important;
+    padding: 12px 15px;
+    transition: 0.4s ease;
+}
+.btn-gray:hover{
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+    cursor: pointer;
 }
 
 .Tournaments h2 {
@@ -224,6 +256,12 @@ p {
     background-color: #a4acb4;
     color: #111111;
     border: none;
+    transition: 0.4s ease;
+}
+.cart-team button:hover {
+    background-color: #111111;
+    color: #a4acb4;
+    cursor: pointer;
 }
 
 .news h2 {
@@ -241,14 +279,12 @@ p {
 }
 .hiden h3 {
     position: absolute;
+    color: #FFFFFF;
     margin: 10px;
     bottom: 10px;
 }
- .continier{
-        display: flex;
-        
 
-    }
+ 
 .news-group {
     display: flex;
     flex-direction: column;
@@ -272,7 +308,8 @@ p {
 .elements-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: space-between;
+    
 }
 
 .new p {
@@ -282,8 +319,17 @@ p {
 }
 
 .new button {
+    padding: 5px;
     width: 50%;
+    transition: 0.4s ease;
+    border: none;
 }
+.new button:hover {
+    background-color: #FF4653;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 
 .partners h2 {
     color: #FFFFFF;
@@ -355,6 +401,12 @@ p {
     border: none;
     font-size: 1.2rem;
     background-color: #FF4653;
+    transition: 0.4s ease;
+}
+.cart-shop button:hover{
+    background-color: #FFFFFF;
+    color: #FF4653;
+    cursor: pointer;
 }
 
 .cart-shop h5,
@@ -384,6 +436,12 @@ button {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    transition: 0.4s ease;
+}
+.btn-show:hover {
+    background-color: #FFFFFF;
+    color: #FF4653;
+    cursor: pointer;
 }
 
 .join {
@@ -405,14 +463,14 @@ button {
 .join .btn {
     display: flex;
     flex-direction: column;
-    gap: 0rem;
+    gap: 0.7rem;
 }
 
 .footer-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -431,7 +489,12 @@ button {
 .footer-group ul li a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: 0.4s ease;
 }
+.footer-group ul li a:hover{
+    color: #FF4653;
+}
+
 .links {
     margin: 0 auto;
     width: 90%;
@@ -463,15 +526,21 @@ footer p {
 
     .navbar .login {
         display: flex;
+        gap: 1rem;
     }
 
     .hero .btn {
         flex-direction: row;
     }
     .hiden{
-        display: inline-block;
+        display:block;
     }
-   
+   .continier{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+        margin: 1rem auto;
+    }
 
     .carts-tournois {
         flex-direction: row;
@@ -493,6 +562,7 @@ footer p {
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
+        gap: 1rem;
     }
     .links-socials{
         float: right;
