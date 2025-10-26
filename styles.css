@@ -14,8 +14,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  font-size: 0.7em;
+  padding: 1em;
+  font-size: initial;
 }
 
 .navbar img {
@@ -25,7 +25,7 @@ body {
 
 .navbar ul {
   display: none;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .navbar ul a {
@@ -40,7 +40,6 @@ body {
 
 .navbar .login {
   display: none;
-  width: 20%;
 }
 
 .btn-sign {
@@ -49,7 +48,12 @@ body {
   background-color: #c3c3c3;
   color: #111111;
   border: none;
-  font-size: 1em;
+  transition: 0.4s ease;
+}
+.btn-sign:hover {
+  background-color: transparent;
+  color: #c3c3c3;
+  cursor: pointer;
 }
 
 .btn-login {
@@ -57,7 +61,12 @@ body {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  font-size: 1em;
+  transition: 0.4s ease;
+}
+.btn-login:hover {
+  background-color: #c3c3c3;
+  color: #111111;
+  cursor: pointer;
 }
 
 i {
@@ -102,14 +111,14 @@ i {
   text-indent: 2em;
   text-align: justify;
 }
-button {
+.button {
   background-color: #ff4653;
   width: 100%;
   height: 2.5em;
   font-size: 2em;
   color: #ffffff;
 }
-button:hover {
+.button:hover {
   transform: scale(105%);
   box-shadow: 0 0 10px #ff4653;
   cursor: pointer;
@@ -231,10 +240,9 @@ td {
   position: absolute;
   z-index: -1;
 }
-.player-card>img{
+.player-card > img {
   width: 100%;
   bottom: 0px;
-
 }
 .stats {
   display: flex;
@@ -278,17 +286,17 @@ td {
   width: 100%;
 }
 /* footer */
-
+footer {
+  font-size: initial;
+}
 .footer-group {
-border-top: 1px solid #4d4d4d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 95%;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.5em;
 }
 
 .footer-group ul {
@@ -304,7 +312,12 @@ border-top: 1px solid #4d4d4d;
 .footer-group ul li a {
   text-decoration: none;
   color: #ffffff;
+  transition: 0.4s ease;
 }
+.footer-group ul li a:hover {
+  color: #ff4653;
+}
+
 .links {
   margin: 0 auto;
   width: 90%;
@@ -314,6 +327,14 @@ border-top: 1px solid #4d4d4d;
   margin: 1rem 0;
   gap: 1rem;
   justify-content: center;
+}
+.links-socials i {
+  transition: 0.4s ease;
+}
+.links-socials i:hover {
+  transform: translateY(-2px);
+  color: #ff4653;
+  cursor: pointer;
 }
 
 footer img {
